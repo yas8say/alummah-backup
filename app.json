@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Al-Ummah",
+    "slug": "al-ummah-app",
+    "description": "This is an app developed to replace the traditional pen and paper attendance system with an easily accessible device. It consists of all features involved in traditional register system.",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "alummah",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "io.alummah.edu",
+      "associatedDomains": [
+        "applinks:al-ummah.vercel.app"
+      ]
+    },
+    "android": {
+      "newArchEnabled": true,
+      "package": "io.alummah.edu",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 1,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "al-ummah.vercel.app",
+              "pathPrefix": "/teacher-signup/"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "91b06124-3f15-4228-8bc1-7dcd14fe13ff"
+      }
+    },
+    "owner": "yas8say"
+  }
+}
